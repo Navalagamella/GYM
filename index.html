@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <!-- Link a AWSOME ICON Página: https://fontawesome.com  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Este meta es necesario para Responsive Design  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links para archivos CSS y Javascript  -->
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <!-- FAVICON  -->
+    <link rel="icon" type="image/png" href="img/nagakabouros.png">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Laila:300,400,500,600,700" rel="stylesheet">
+    <!-- Título de la página  -->
+    <title>GYM Nagakabouros</title>
+  </head>
+  <body>
+<!-- Los div fondo y contenido hacen que se queden fijo  -->
+<div class="fondo">
+    <div class="textocentradoHI"><span class="Nagakabouros">Nagakabouros</span> es el dios del movimiento.<br>Nunca nos podemos parar <br>Siempre en movimiento. </div>
+<div class="contenido">
+
+      <nav>
+        <!-- MENU DESPLEGABLE -->
+        <div class="iconomenu">
+              <!-- ICONO MENU DESPLEGABLE UTILIZANDO UN AWSOME ICONS COMO IMAGEN -->
+              <i class="fas fa-bars"></i>
+
+              <!-- CONTENIDO DEL MENÚ DESPLEGABLE -->
+              <div class="contenidomenu">
+                    <a style="border-radius: 20px 20px 0px 0px;" href="#forminscrip">Inscripción</a>
+                    <a href="#SeccionFotos">Instalaciones</a>
+                    <a style="border-radius: 0px 0px 20px 20px;" href="#actividades">Actividades</a>
+              </div>
+
+      </div>
+      </nav>
+      <!-- MENU DESPLEGABLE 2 -->
+      <div class="iconomenu2">
+            <!-- CONTENIDO DEL MENÚ DESPLEGABLE -->
+            <div class="contenidomenu2">
+                  <a style="border-radius: 20px 20px 0px 0px;" href="#forminscrip">Inscripción</a>
+                  <a href="#SeccionFotos">Instalaciones</a>
+                  <a style="border-radius: 0px 0px 20px 20px;" href="#actividades">Actividades</a>
+            </div>
+
+    </div>
+      <!-- MENU NOTIFICACIONES -->
+      <aside class="notificaciones">
+
+        <div class="icononotificaciones">
+              <!-- ICONO MENU DESPLEGABLE UTILIZANDO UN AWSOME ICONS COMO IMAGEN -->
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+
+
+              <!-- CONTENIDO DEL MENÚ DESPLEGABLE -->
+              <div class="contenidonotificaciones">
+                    <p>Síguenos en:</p>
+                    <a href="#1"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#2"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="#3" style="border-radius:0px 0px 20px 20px"><i class="fab fa-instagram"></i>Instagram</a>
+              </div>
+
+      </div>
+      </aside>
+      <article>
+        <div id="forminscrip">
+          <header>
+            ¡Inscríbete!
+          </header>
+          <p>Rellene los siguientes datos para obtener acceso a la membresía <br><span>GIMNASIO</span> <i class="fas fa-dumbbell"></i> <span class="Nagakabouros">Nagakabouros</span></p>
+          <div class="formulario">
+            <form method="post" action="#">
+      <div class="datos izq">
+          <p>Datos personales:</p>
+            <span>
+               <input type="text" id="nombre" name="nombre"/>
+              <label for="nombre">Nombre<span class="requerido">*</span></label>
+            </span>
+            <span>
+              <input type="text" id="apellido1" name="apellido1"/>
+              <label for="apellido1">Primer apellido<span class="requerido">*</span></label>
+            </span>
+            <span>
+              <input type="text" id="apellido2" name="apellido2"/>
+              <label for="apellido2">Segundo apellido<span class="requerido">*</span></label>
+            </span>
+            <span>
+              <input type="number" id="edad" name="edad"/>
+              <label for="edad">Edad</label>
+            </span>
+        </div>
+
+        <div class="direccion der">
+          <p>Domicilio:</p>
+            <span>
+              <input type="text" id="direccion" name="direccion" />
+              <label for="direccion">Calle, número<span class="requerido">*</span></label>
+            </span>
+            <span style="width:100%" class="izq">
+              <input type="text" id="codigopostal" name="codigopostal" />
+              <label for="codigopostal">Código postal<span class="requerido">*</span></label>
+              <input type="text" id="municipio" name="municipio" />
+              <label for="municipio">Municipio<span class="requerido">*</span></label>
+            </span>
+            <span>
+              <select id="provincia" name="provincia">
+                <option value="sinprovincia">Elige provincia</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Cadiz">Cadiz</option>
+                <option value="Malaga">Málaga</option>
+                <option value="Cordoba">Córdoba</option>
+                <option value="Granada">Granada</option>
+                <option value="Jaen">Jaén</option>
+                <option value="Almeria">Almeria</option>
+              </select>
+              <label for="provincia">Provincia<span class="requerido">*</span></label>
+            </span>
+        </div>
+
+        <div class="contacto">
+          <p>Información de contacto:</p>
+            <span class="izq">
+              <input type="email" id="email" name="email" value="" />
+              <label class="titulo" for="email">Email<span class="requerido">*</span></label>
+            </span>
+
+            <span class="der">
+              <input type="tel" id="telefono" name="telefono" />
+              <label for="telefono">Telefono<span class="requerido">*</span></label>
+              <input type="checkbox" id="notificaciones" name="notificaciones" checked value="">
+              <label for="notificaciones">Deseo recibir Información y Promociones</label>
+
+            </span>
+
+        </div>
+
+        <div class="enviar">
+          <input type="submit" id="alta" value="Enviar" />
+        </div>
+
+    </form>
+
+          </div>
+
+        </div>
+
+        <div class="Dudas">
+          <h1>¿Aun con dudas?</h1>
+        </div>
+
+        <div id="SeccionFotos">
+          <h3>Observe nuestras instalaciones</h3>
+          <p>Perfecta para todos nuestros usuarios</p>
+          <div class="grid">
+            <div class="item1"><img src="img/piscina.jpg" alt="piscina"></div>
+            <div class="item2"><img class="imgmaspeque" src="img/instalaciones1.jpg" alt="instalaciones1"></div>
+            <div class="item3"><img class="imgpeque" src="img/instalaciones2.jpg" alt="instalaciones2"></div>
+            <div class="item4"><img src="img/instalaciones3.jpg" alt="instalaciones3"></div>
+            <div class="item5"><img class="imgmaspeque" src="img/instalaciones4.jpg" alt="instalaciones4"></div>
+            <div class="item6"><img class="imgespecial" src="img/instalaciones5.jpg" alt="instalaciones5"></div>
+            <div class="item7"><img src="img/instalaciones6.jpeg" alt="instalaciones6"></div>
+            <div class="item8"><img class="imgmaspeque" src="img/instalaciones7.jpg" alt="instalaciones7"></div>
+            <div class="item9"><img class="imgpeque" src="img/instalaciones8.jpg" alt="instalaciones8"></div>
+          </div>
+
+        </div>
+
+        <div id="actividades">
+          <p>NUESTRAS MEJORES ACTIVIDADES <br>
+            Selecciona tu actividad o descubre las que tiene el centro que te interese <br>
+            ¡En un clic aprende más!</p>
+            <div class="actividades1">
+              <img src="img/cardio.jpg" alt="cardio">
+                <div class="textocentrado">Cardio</div>
+              <table>
+                <tr>
+                  <th>Objetivo</th>
+                  <th>Duración</th>
+                  <th>Intensidad</th>
+                </tr>
+                <tr>
+                  <td>Pérdida de<br>Grasa</td>
+                  <td>45 Minutos</td>
+                  <td>Media</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="actividades2">
+              <img src="img/aqua.jpg" alt="aqua">
+                <div class="textocentrado">Aquafit</div>
+              <table>
+                <tr>
+                  <th>Objetivo</th>
+                  <th>Duración</th>
+                  <th>Intensidad</th>
+                </tr>
+                <tr>
+                  <td>Tonificación</td>
+                  <td>55 Minutos</td>
+                  <td>Baja</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="actividades3">
+              <img src="img/esgrima.png" alt="esgrima">
+                <div class="textocentrado">Esgrima</div>
+              <table>
+                <tr>
+                  <th>Objetivo</th>
+                  <th>Duración</th>
+                  <th>Intensidad</th>
+                </tr>
+                <tr>
+                  <td>Coordinación</td>
+                  <td>90 Minutos</td>
+                  <td>Alta</td>
+                </tr>
+              </table>
+            </div>
+
+            <table style="display:none">
+            	<tr>
+            		<th style="visibility:hidden" scope="col"></th>
+            		<th scope="col">Compra</th>
+            		<th scope="col"><span class="Nagakabouros">Nagakabouros</span></th>
+            	</tr>
+            	<tr>
+            		<th class="Euro" scope="row"><i class="fa fa-euro"></i></th>
+            		<td>Gratis</td>
+            		<td><span class="Nagakabouros">Gratis</span></td>
+            	</tr>
+            	<tr class="alterno">
+            		<th class="Dolar" scope="row"><i class="fa fa-dollar"></i> No Abonados </th>
+            		<td>119.01</td>
+            		<td><span class="Nagakabouros">Gratis</span></td>
+            	</tr>
+            	<tr>
+            		<th class="Libra" scope="row"><i class="fa fa-gbp"></i> Libra/Dolar</th>
+            		<td>1.8606</td>
+            		<td><span class="Nagakabouros">Gratis</span></td>
+            	</tr>
+            	<tr class="alterno">
+            		<th class="Yen" scope="row"> <i class="fa fa-cny"></i> Euro/Yen</th>
+            		<td>149.09</td>
+            		<td><span class="Nagakabouros">Gratis</span></td>
+            	</tr>
+            </table>
+
+
+
+        </div>
+
+
+
+      </article>
+      <footer>
+        <p class="footerizq">C/ Carretera 286. Sevilla<br>Sevilla.<br><i class="fas fa-dumbbell"></i>GIMNASIO <span class="Nagakabouros">Nagakabouros</span><br><i class="fas fa-phone-square"></i> 645 999 888<br><i class="fas fa-envelope"></i>Nagakabourosgym@gmail.com</p>
+      </footer>
+
+
+</div>
+</div>
+  </body>
+</html>
