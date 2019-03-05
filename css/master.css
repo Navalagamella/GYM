@@ -513,9 +513,6 @@ footer p{
   .footerizq {font-size: 20px;margin-bottom: 5em;}
   .icononotificaciones {
     font-size: 30px;
-    position: absolute;
-    bottom: -175em;
-    left: 27px;
   }
   .contenidonotificaciones p {font-size: 20px;}
   /* TEXTO DENTRO DE LA HERO IMAGE*/
